@@ -5,6 +5,7 @@ import './App.css'
 
 import Card from './components/layout/Card'
 
+import Mega from './components/mega/Mega.jsx'
 import Contador from './components/contador/Contador'
 import Input from './components/formulario/Input'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
@@ -20,12 +21,17 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Aleatorio from './components/basicos/Aleatorio'
 
+
 export default () => (
     <div className="App">
         <h1>Fundamento React</h1>
 
         <div className="Cards">
 
+            <Card titulo="Contador" color="#b5076b">
+                <Mega qtde={8} />
+            </Card>
+            
             <Card titulo="Contador" color="#f64b3c">
                 <Contador numInicial={10} />
             </Card>
